@@ -1,0 +1,8 @@
+__pycache__
+build/
+**/*.egg-info
+**/build
+test.py
+project-proposal.ipynb
+cmu.json
+**/*.pdf
