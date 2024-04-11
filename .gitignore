@@ -4,5 +4,6 @@ build/
 **/build
 test.py
 project-proposal.ipynb
-cmu.json
+# cmu.json
 **/*.pdf
+**/*.json
