@@ -1,5 +1,6 @@
 import json
 import os
+from .get_paper import get_paper
 
 # Get the directory of the current script
 current_dir = os.path.dirname(__file__)
@@ -13,10 +14,10 @@ institute_path = os.path.join(db_dir, 'institute_db.json')
 
 
 
-def category_search(institutions:list,category:list):
+def category_search(institutions:list,category:list, save_paper=False):
     institutions = list(set(institutions))
     keywords = list(set(category))
-    
+    institutions_ids = []
     # for inst in institutions: # update local database
     #     _updatedb(inst)
     
@@ -35,7 +36,6 @@ def category_search(institutions:list,category:list):
             data = json.load(file)
         for inst in institutions:
             inst_data = data[inst]
-            print(inst_data.dtype)
             for r in inst_data['results']:
                 entity = r['display_name']  
                 # print(r['display_name'])
@@ -55,11 +55,23 @@ def category_search(institutions:list,category:list):
                 
                 print("------------------------------------------------------")
                 print("Results Found: \n")
+                # get paper
+                
+                if save_paper:
+                    institutions_ids.append(r["id"])
+
+                    
+                
                 for i, keys in enumerate(remain_keywords):
                     idx = all_categories.index(keys)
                     r["x_concepts"][idx]["score"]
                     print(f"Entity: {entity}, Category: {keys}, Score: {r['x_concepts'][idx]['score']}")
     else:
         raise FileNotFoundError("Database does not exist yet, try update the database first")
-            
-            
+    
+    if save_paper:
+        get_paper(category, institutions_ids, save_paper)
+        
+        
+        
+                
