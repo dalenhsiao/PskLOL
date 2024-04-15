@@ -101,3 +101,29 @@ cd root
 pip install . 
 
 ```
+
+## Package Tree
+```
+PskLOL
+├── __init__.py
+├── __pycache__
+│   ├── __init__.cpython-311.pyc
+│   ├── __init__.cpython-39.pyc
+│   ├── _updatedb.cpython-311.pyc
+│   ├── _updatedb.cpython-39.pyc
+│   ├── category_search.cpython-311.pyc
+│   ├── category_search.cpython-39.pyc
+│   ├── get_paper.cpython-311.pyc
+│   └── update.cpython-311.pyc
+├── _db
+│   ├── data.csv
+│   └── institute_db.json
+├── _updatedb.py
+├── category_search.py
+├── get_paper.py
+└── update.py
+
+3 directories, 15 files
+```
+
+
