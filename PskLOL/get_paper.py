@@ -1,6 +1,5 @@
 import requests
 import json
-import pandas as pd
 
 
 def _get_category_ids(categories: list, req_param: dict) -> list:
@@ -110,6 +109,3 @@ def get_paper(
         return papers
     else:
         return -1
-
-# if __name__ == "__main__":
-    

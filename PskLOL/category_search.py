@@ -41,9 +41,8 @@ def category_search(institutions: list, category: list):
 
             db.update_data(data)
             data = db.get_data()
-            # import pdb; pdb.set_trace
+            # import pdb; pdb.set_trace()
             for i, r in data.iterrows():
-                # print(r)
                 # import pdb ; pdb.set_trace()
                 entity = r["display_name"]
                 all_cats = [

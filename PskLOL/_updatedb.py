@@ -10,6 +10,7 @@ def fetch_data(query: str) -> dict:
     if response.status_code == 200:
         response = response.json()
         data = pd.json_normalize(response['results'])
+        print(data.dtypes)
         return data
     else:
         return -1
