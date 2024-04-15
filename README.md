@@ -14,7 +14,7 @@ Carnegie Mellon University
 ```
 
 ### Traditional OpenAlex search
-When using only the OpenAlex API, the search process is relatively straightforward. In Python, however, we must access the data by making a request with a URL and then manually query the obtained JSON file, which is not particularly intuitive for users. 
+When using only the OpenAlex API, in Python, we must access the data by making a request with a URL and then manually query the obtained JSON file, which is not particularly intuitive for users. 
 
 ```python
 params = {"search": query}
