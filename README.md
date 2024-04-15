@@ -1,12 +1,12 @@
 # PskLOL: Package for Scientific Keyword search on Local database from OpenAlex Library 
 
 ## Introduction
-PskLOL is designed to provide users with more convenient access to scientific research related to their chosen topics, using data fetched from OpenAlex into a local database. Users simply need to input a keywords related to their area of interests (e.g., Engineering, Computer Science, Business, etc.), and PskLOL will update and search the local database to provide the desired information, facilitating their scientific search.
+PskLOL is designed to provide users with a more convenient access to scientific research related to their chosen topics, using data fetched from OpenAlex and stored in a local database. Users simply need to input keywords related to their areas of interest (e.g., Engineering, Computer Science, Business, etc.). PskLOL will then update and search the local database to provide the desired information, thereby facilitating their scientific search.
 
 
 ## Version 0.0.1
 
-Our powerful PskLOL search engine is empowered by our `DB_connector` which connect the local database to OpenAlex API and provide user specified information directly without any further effort. For instance, when searching for Carnegie Mellon University, we may find the following information: 
+PskLOL search engine is empowered by our `DB_connector` which connect the local database to OpenAlex API and provide user specified information directly without any further effort. For instance, when searching for Carnegie Mellon University, we may find the following information: 
 
 ```
 Carnegie Mellon University
