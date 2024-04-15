@@ -1,12 +1,12 @@
 import os
-from _updatedb import DB_connector, fetch_data
+from ._updatedb import DB_connector, fetch_data
 
 
 # Get the directory of the current script
 current_dir = os.path.dirname(__file__)
 # Construct the path to the '_db' directory
 db_dir = os.path.join(current_dir, "_db")
-print("current db path : ", db_dir)
+
 # Ensure the '_db' directory exists
 os.makedirs(db_dir, exist_ok=True)
 # Specify the path to the 'institute_db.json' file
