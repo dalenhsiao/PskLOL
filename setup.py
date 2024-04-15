@@ -10,5 +10,7 @@ setup(
     license="MIT",
     packages=["PskLOL"],
     scripts=[],
-    long_description="""Package for Scientific Keyword Search on Local Database from OpenAlex Library""", 
+    long_description="""
+    Package for Scientific Keyword Search on Local
+    Database from OpenAlex Library""",
 )
