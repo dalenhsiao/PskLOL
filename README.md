@@ -1,7 +1,7 @@
 # PskLOL: Package for Scientific Keyword search on Local database from OpenAlex Library 
 
 ## Introduction
-In scientific research, access to scientific literature is a crucial component because the most advanced research builds upon previous studies. PskLOL is designed to provide users with more convenient access to scientific research related to their chosen topics, using data fetched from OpenAlex into a local database. Users simply need to input a keywords related to their area of interests (e.g., Engineering, Computer Science, Business, etc.), and PskLOL will update and search the local database to provide the desired information, facilitating their scientific search.
+PskLOL is designed to provide users with more convenient access to scientific research related to their chosen topics, using data fetched from OpenAlex into a local database. Users simply need to input a keywords related to their area of interests (e.g., Engineering, Computer Science, Business, etc.), and PskLOL will update and search the local database to provide the desired information, facilitating their scientific search.
 
 
 ## Version 0.0.1
