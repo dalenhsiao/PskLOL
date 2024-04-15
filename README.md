@@ -68,11 +68,11 @@ Entity: Carnegie Mellon University,  Category: computer science,  Score: 74.7
 
 
 ### Limitations
-At this point we only support category search for Canegie Mellon University, hopefully in the next version we will start improving our update search engine and allow user to input desired searched institutions and other entities. 
+- At this point we only support category search for Canegie Mellon University, hopefully in the next version we will start improving our update search engine and allow user to input desired searched institutions and other entities. 
 
-In addition, the function get_paper, which enables users to fetch research paper titles and their DOI information by category and institution, is still under development. Hopefully, we will see that in future versions. :) 
+- The function get_paper, which enables users to fetch research paper titles and their DOI information by category and institution, is still under development. Hopefully, we will see that in future versions. :) 
 
-Since the data source relies on the OpenAlex library, the information we can access is also restricted by OpenAlex.
+- Since the data source relies on the OpenAlex library, the information we can access is also restricted by OpenAlex.
 
 ## Functions 
 - **category_search(institutions: list, category: list)**: Search specific scientific categories by institutions and print categories and category scores. (In version 0.0.1 we only support institution = carnegie mellon university)
