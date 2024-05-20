@@ -7,3 +7,4 @@ project-proposal.ipynb
 # cmu.json
 **/*.pdf
 **/*.json
+**/*.DS_Store
