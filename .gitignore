@@ -10,3 +10,4 @@ project-proposal.ipynb
 **/*.DS_Store
 **/*.pytest_cache
 misc
+PskLOL/*.yaml
